@@ -24,14 +24,15 @@ const ContactList = ({ contacts, fetchContacts }) => {
           {contacts.map((contact) => (
             <li
               key={contact.id}
-              className="flex flex-col md:flex-row justify-between items-start md:items-center space-y-4 md:space-y-0 p-4 border border-gray-200 rounded-lg shadow-sm"
+              className="flex flex-col md:flex-row md:space-x-3 justify-between items-start md:items-center 
+              space-y-4 md:space-y-0 p-4 border border-gray-200 rounded-lg shadow-sm"
             >
               <div>
                 <p className="font-semibold text-lg">{contact.name}</p>
                 <p className="text-gray-600">{contact.email}</p>
                 <p className="text-gray-600">{contact.phone}</p>
               </div>
-              <div className="flex space-x-4">
+              <div className="flex  space-x-4">
                 <button
                   onClick={() => setSelectedContact(contact)}
                   className="bg-blue-500 text-white font-semibold px-4 py-2 rounded-lg hover:bg-blue-700 transition duration-200"
