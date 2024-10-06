@@ -7,6 +7,7 @@ CRUD Operations: Create, Read, Update, and Delete functionality for managing con
 Real-Time Updates: The application updates the contact list in real time after any changes.
 Persistent Data Storage: Utilizes a backend API to store contact information securely.
 Responsive Design: Ensures a smooth experience across various devices.
+
 Technologies Used :
 Frontend: React, Axios, Tailwind CSS
 Backend: Flask, SQLAlchemy
