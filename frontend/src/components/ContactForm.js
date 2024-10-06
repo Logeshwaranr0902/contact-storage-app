@@ -8,16 +8,23 @@ const ContactForm = ({ fetchContacts }) => {
 
   const addContact = async (e) => {
     e.preventDefault();
-    await axios.post("https://contact-storage-app.onrender.com/api/contacts", {
-      name,
-      email,
-      phone,
-    });
-
-    fetchContacts();
-    setName("");
-    setEmail("");
-    setPhone("");
+    try {
+      await axios.post(
+        "https://contact-storage-app.onrender.com/api/contacts",
+        {
+          name,
+          email,
+          phone,
+        }
+      );
+      fetchContacts();
+      setName("");
+      setEmail("");
+      setPhone("");
+    } catch (error) {
+      console.error("Error adding contact:", error);
+      // Optionally, show a message to the user
+    }
   };
 
   return (
