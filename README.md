@@ -11,7 +11,6 @@ Responsive Design: Ensures a smooth experience across various devices.
 Technologies Used :
 Frontend: React, Axios, Tailwind CSS
 Backend: Flask, SQLAlchemy
-Database: SQLite 
+Database: SQLite
 Deployment : Render (Backend) Netlify(Frontend)
-![App Screenshot](Screenshot%202024-10-06%20135200.png)
-
+![App Screenshot](Screenshot%202024-10-06%20172518.png)
