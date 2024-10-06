@@ -6,7 +6,9 @@ const ContactList = ({ contacts, fetchContacts }) => {
   const [selectedContact, setSelectedContact] = useState(null);
 
   const deleteContact = async (id) => {
-    await axios.delete(`/contacts/${id}`);
+    await axios.delete(
+      `https://contact-storage-app.onrender.com/api/contacts/${id}`
+    );
     fetchContacts();
   };
 
