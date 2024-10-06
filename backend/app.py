@@ -8,7 +8,7 @@ app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///contacts.db'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
 # Enable CORS for the specified origins
-CORS(app, resources={r"/api/*": {"origins": "https://contact-storage-app.netlify.app"}})
+CORS(app)
 
 db.init_app(app)
 
