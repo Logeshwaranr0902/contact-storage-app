@@ -1,5 +1,4 @@
-Contact Manager /n
-Description:
+Contact Manager :
 The Contact Manager is a full-stack web application designed to efficiently manage and store contact information. Built using React for the frontend and Flask for the backend, this application provides a seamless user experience for adding, updating, deleting, and viewing contacts.
 
 Features
