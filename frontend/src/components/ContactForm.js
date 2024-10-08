@@ -23,7 +23,6 @@ const ContactForm = ({ fetchContacts }) => {
       setPhone("");
     } catch (error) {
       console.error("Error adding contact:", error);
-      // Optionally, show a message to the user
     }
   };
 

@@ -26,13 +26,13 @@ def delete_contact(id):
 
 @api.route('/contacts/<int:id>', methods=['PUT'])
 def update_contact(id):
-    contact = Contact.query.get_or_404(id)  # Get the contact or return a 404 error
-    data = request.json  # Get the JSON data from the request
+    contact = Contact.query.get_or_404(id)  
+    data = request.json  
 
-    # Update the contact details
-    contact.name = data.get('name', contact.name)  # Update name if provided
-    contact.email = data.get('email', contact.email)  # Update email if provided
-    contact.phone = data.get('phone', contact.phone)  # Update phone if provided
+   
+    contact.name = data.get('name', contact.name)  
+    contact.email = data.get('email', contact.email)  
+    contact.phone = data.get('phone', contact.phone) 
 
-    db.session.commit()  # Commit the changes to the database
-    return jsonify({'message': 'Contact updated!'}), 200  # Return success response
+    db.session.commit()  
+    return jsonify({'message': 'Contact updated!'}), 200  
